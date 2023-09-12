@@ -1,0 +1,5 @@
+dist
+coverage
+doc
+src/js/Card.js
+src/js/Controller.js

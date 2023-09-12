@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(36, 119, 175);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-top: 50px;
+	display: grid;
+  grid: 600px auto / 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-rows: 1fr;
+  padding: 0 15%;
+}
+
+.column {
+	width: 80%;
+	padding: 20px 10px;
+	background-color: #f2eeee;
+	border-radius: 5px;
+	margin: 0 auto;
+  align-self: start;
+  font-weight: 600;
+}
+
+.cards {
+  min-height: 50px;
+  font-weight: 400;
+}
+
+.draggable {
+	min-height: 20px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color: #e7e4e4;
+	user-select: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 15px;
+  color: rgb(41, 40, 40);
+}
+
+.draggable:hover {
+	background-color: #e3dcdc;
+  cursor: pointer;
+}
+
+.draggable:active {
+	background-color: #b8f8d3;
+  cursor: grabbing;
+}
+
+.card__delete {
+  opacity: 0;
+}
+
+.card__delete:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.add {
+  margin-top: 10px;
+}
+
+.add__text {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.add__text:hover {
+  text-decoration: underline;
+}
+
+.add__input {
+  width: 100%;
+  min-height: 40px;
+  text-align: start;
+  font-size: 10px;
+}
+
+.add__button {
+  width: 30%;
+  height: 30px;
+  background-color: rgb(118, 235, 118);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  font-size: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.invisible {
+  display: none;
+}
+
+.clear-all {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(252, 24, 24);
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+}
